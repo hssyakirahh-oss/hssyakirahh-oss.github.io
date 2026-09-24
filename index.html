@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Syakiratul Husna | Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f2ec;
+    color: #28332e;
+    line-height: 1.7;
+}
+
+header {
+    background: #263d34;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #d5c6a1;
+}
+
+.hero {
+    min-height: 75vh;
+    background: #344b40;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero .intro {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #d5c6a1;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 76px);
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.hero h2 {
+    font-size: 23px;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+
+.hero p {
+    margin-top: 20px;
+    max-width: 600px;
+    color: #e3e8e3;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 24px;
+    background: #d5c6a1;
+    color: #263d34;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+section {
+    padding: 70px 10%;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.label {
+    color: #8a7650;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+}
+
+h2.title {
+    color: #344b40;
+    font-size: 34px;
+    margin: 8px 0 25px;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 35px;
+}
+
+.card {
+    background: #fffefa;
+    padding: 25px;
+    border: 1px solid #e1ded5;
+    margin-bottom: 18px;
+    border-radius: 4px;
+}
+
+.card h3 {
+    color: #344b40;
+    margin-bottom: 5px;
+}
+
+.date {
+    color: #817f76;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.skills span {
+    background: #e5e9e1;
+    color: #344b40;
+    padding: 7px 12px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+#experience {
+    background: #eeece5;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.work-card {
+    background: #fffefa;
+    border: 1px solid #e1ded5;
+    padding: 22px;
+    border-radius: 4px;
+}
+
+.work-card h3 {
+    color: #344b40;
+    margin-bottom: 10px;
+}
+
+#contact {
+    background: #344b40;
+    color: white;
+}
+
+#contact h2.title {
+    color: white;
+}
+
+#contact a {
+    color: #e5d7b4;
+}
+
+footer {
+    background: #263d34;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .about,
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 50px 7%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">HUSNA | PORTFOLIO</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <div class="intro">Welcome to my digital portfolio</div>
+
+        <h1>SYAKIRATUL<br>HUSNA</h1>
+
+        <h2>DEVELOPMENT MANAGEMENT</h2>
+
+        <p>
+            Assalamualaikum and hello! I am a Development Management
+            graduate with Honours and a Master's Degree with Merit
+            in Management and Technology. Explore my educational
+            journey, experiences, leadership activities, and skills.
+        </p>
+
+        <a href="#about" class="button">Discover More</a>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <div class="label">Get to know me</div>
+        <h2 class="title">ABOUT ME</h2>
+
+        <div class="about">
+            <div>
+                <p>
+                    I am a motivated and organised individual with
+                    a background in Development Management and
+                    Management and Technology. Through my academic
+                    journey, internship, sales experience, and
+                    student leadership, I have developed skills in
+                    communication, research, teamwork, and
+                    coordination. I am eager to continue learning
+                    and contribute positively to an organisation.
+                </p>
+
+                <br>
+
+                <h3>Skills</h3>
+
+                <div class="skills">
+                    <span>Management</span>
+                    <span>Event Coordination</span>
+                    <span>Administration</span>
+                    <span>Research</span>
+                    <span>Customer Service</span>
+                    <span>Communication</span>
+                    <span>Leadership</span>
+                    <span>Teamwork</span>
+                </div>
+
+                <br>
+
+                <h3>Languages</h3>
+                <p>Malay · English</p>
+            </div>
+
+            <div class="card" id="education">
+                <div class="label">Academic background</div>
+                <h3>EDUCATION</h3>
+
+                <br>
+
+                <h3>Master in Management and Technology</h3>
+                <p>Universiti Teknologi Brunei (UTB)</p>
+                <p class="date">August 2025 – July 2026</p>
+
+                <hr><br>
+
+                <h3>Bachelor of Development Management with Honours</h3>
+                <p>Universiti Islam Sultan Sharif Ali (UNISSA)</p>
+                <p class="date">August 2021 – June 2025</p>
+
+                <hr><br>
+
+                <h3>STPUB</h3>
+                <p>Sekolah Menengah Arab Laki-Laki Hassanal Bolkiah</p>
+                <p class="date">January 2019 – April 2021</p>
+
+                <br>
+
+                <h3>O-Level</h3>
+                <p>Sekolah Ugama Arab Menengah Perempuan Raja Isteri Pengiran Anak Hajah Saleha</p>
+                <p class="date">January 2014 – April 2018</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="experience">
+    <div class="container">
+        <div class="label">My journey</div>
+        <h2 class="title">EXPERIENCE</h2>
+
+        <div class="card">
+            <h3>Sales Assistant</h3>
+            <p class="date">Koleksi Husna | June 2025 – August 2025</p>
+            <ul>
+                <li>Assisted customers with product selection and enquiries.</li>
+                <li>Supported daily sales operations and customer service.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Intern</h3>
+            <p class="date">Perpustakaan Dewan Bahasa dan Pustaka, Brunei Darussalam | June 2024 – August 2024</p>
+            <ul>
+                <li>Conducted research and comparative analysis of national libraries and book purchasing trends.</li>
+                <li>Learned about book acquisition processes and library management systems.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Naib Pengerusi, Unit Perhubungan Am</h3>
+            <p class="date">Islamic Development Management Student Society | 2021/2022</p>
+            <ul>
+                <li>Helped coordinate charity collection and distribution of food and essentials to students affected by COVID-19.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Naib Pengerusi, Unit Pelajaran dan Penerangan</h3>
+            <p class="date">Islamic Development Management Student Society | 2023/2024</p>
+            <ul>
+                <li>Managed the Voice It Out Series-10 programme.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Ahli Jawatankuasa Perhubungan Am</h3>
+            <p class="date">Kem Kepimpinan Pelaku Pembangunan Islam (K2P2I)</p>
+        </div>
+
+        <div class="card">
+            <h3>Master of Ceremonies</h3>
+            <p class="date">Faculty Events</p>
+            <ul>
+                <li>Appointed as MC for several faculty events.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Naib Bendahari</h3>
+            <p class="date">Usuluddin Student Society</p>
+            <ul>
+                <li>Assisted with society finances and faculty events.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="work">
+    <div class="container">
+        <div class="label">Selected highlights</div>
+        <h2 class="title">WORK & ACTIVITIES</h2>
+
+        <p>
+            This section can showcase selected academic projects,
+            certificates, presentations, and activities.
+            Add your own materials when you are ready.
+        </p>
+
+        <div class="work-grid">
+            <div class="work-card">
+                <h3>Academic Projects</h3>
+                <p>
+                    A space to feature relevant university projects,
+                    research, or presentations.
+                </p>
+            </div>
+
+            <div class="work-card">
+                <h3>Certificates</h3>
+                <p>
+                    A space to display certificates and professional
+                    development achievements.
+                </p>
+            </div>
+
+            <div class="work-card">
+                <h3>Events & Activities</h3>
+                <p>
+                    A space to share selected event experiences,
+                    volunteering, and leadership activities.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <div class="label">Let's connect</div>
+        <h2 class="title">CONTACT ME</h2>
+
+        <p><strong>Email:</strong>
+            <a href="mailto:hssyakirahh@gmail.com">hssyakirahh@gmail.com</a>
+        </p>
+
+        <p><strong>Phone:</strong> +673 718 1397</p>
+
+        <p><strong>Location:</strong> Brunei Darussalam</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Syakiratul Husna | Digital Portfolio
+</footer>
+
+</body>
+</html>
